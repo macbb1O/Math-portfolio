@@ -1,0 +1,397 @@
+Project Type:
+
+Fully interactive web app using HTML + CSS + JavaScript (no frameworks needed unless helpful—allow lightweight libraries).
+
+⭐ OVERALL VISION
+
+Build a high-quality, addictive gamified study platform for Grade 10 MPM2D Unit 1 — Linear Relations.
+The game should be:
+
+visually polished
+
+modern
+
+engaging
+
+extremely satisfying to play
+
+simple UI with high-quality effects
+
+takes ~30 minutes to complete the full unit
+
+designed like a mobile game, but playable in browser
+
+includes world map progression, levels, streaks, XP, badges, boss fights, animations, and reward cycles
+
+The final experience should feel like:
+
+Duolingo (streaks + leveling)
+
+Prodigy (Math) style progression
+
+Geometry Dash polish
+
+Simple arcade micro-animations
+
+🎨 AESTHETIC REQUIREMENTS
+
+Use:
+
+soft neon colors (pinks, blues, purples)
+
+glowy UI elements
+
+floating particles
+
+rounded tiles
+
+animated buttons (bounce on hover)
+
+“sparkle” animations when correct
+
+“shake” animation when wrong
+
+smooth transitions between levels
+
+progress map with nodes and paths
+
+dynamic ambient background (slow gradient pulse)
+
+📱 UI LAYOUT
+Screens Required
+
+Title Screen
+
+Game title “Linear Legends”
+
+Animated characters or glowing math symbols
+
+“Start Adventure” button
+
+“Continue” button if user has progress
+
+Display streak + XP level
+
+Daily bonus popup
+
+World Map
+
+Level nodes connected by paths
+
+Completed levels glow gold
+
+Locked levels are greyed out
+
+Boss levels are larger and animated
+
+Shows:
+
+1.01 → 1.10
+
+SWYK #1–4
+
+Review
+
+Final Boss Test
+
+Lesson Gameplay Screen
+
+Question container
+
+For MCQ:
+
+four animated buttons
+
+For equation input:
+
+clean input bar
+
+“Check Answer” button
+
+Hint button (costs 1 energy)
+
+Top bar:
+
+XP bar
+
+Level number
+
+Streak (with flame icon 🔥)
+
+Hearts/energy
+
+Level Complete Screen
+
+Confetti animation
+
+XP reward
+
+Badge unlock
+
+Continue button
+
+Final Boss Screen
+
+Dramatic dark theme
+
+Timer
+
+Final score
+
+Big “YOU PASSED THE UNIT!” celebration screen
+
+⚙️ GAME MECHANICS
+Streak System
+
++1 streak per correct answer
+
+Special animations at streak 3, 5, 10
+
+Streak breaks on incorrect answer
+
+Give a “REVIVE” using 5 energy points
+
+XP + Leveling
+
+XP for correct answers
+
+Bonus XP for perfect level
+
+XP levels unlock skins/themes
+
+Energy System
+
+5 energy max
+
++1 energy every 5 minutes
+
+Hints cost 1 energy
+
+Revive streak costs 5 energy
+
+Can play without energy, but no hints or revives
+
+Badges
+
+Distributive Dominator
+
+Fraction Fragger
+
+Graphing Guru
+
+Slope Master
+
+Parallel Pro
+
+Two-Point Titan
+
+Substitution Samurai
+
+Elimination Elite
+
+The Boss Destroyer (Complete all SWYKs)
+
+Legend of Lines (Complete Test)
+
+Animations Required
+
+sparkles (HTML5 canvas or pure CSS)
+
+confetti for victory screens
+
+button press bounce
+
+wrong answer shake
+
+smooth fade transitions
+
+world map node pop-in effect
+
+📚 CONTENT TO INCLUDE (FULL UNIT)
+
+Each level must include 10–15 questions, increasing difficulty.
+Mix question types:
+
+multiple choice
+
+typing an equation
+
+match graph to equation
+
+“drag to match” optional
+
+solve for x
+
+solve system
+
+Include:
+
+1.01 — Simplifying & Distributive Property
+
+Examples:
+
+Expand: 3(2x – 4)
+
+Simplify: 5x + 3 – 2x + 8
+
+Expand & combine like terms
+
+1.02 — Solving Linear Equations
+
+Multi-step
+
+Variables both sides
+
+Fractions optional
+
+SWYK #1 Boss Fight
+
+Timed
+
+Harder solving equations
+
+1.03 — Equations with Fractions
+
+clear denominators
+
+solve
+
+1.04 — Graphing Linear Equations
+
+Include:
+
+slope identification
+
+y-intercept detection
+
+given graph → pick correct equation
+
+given equation → pick correct graph
+
+1.05 — Standard Form
+
+Convert slope-intercept → standard
+
+Given x-int & y-int → find equation
+
+Solve for intercepts
+
+SWYK #2 Boss Fight
+
+1.06 — Parallel & Perpendicular
+
+Identify slopes
+
+Determine equation of line parallel to given line
+
+Determine equation perpendicular
+
+1.07 — Equation Given 2 Points
+
+Find slope (m)
+
+Find equation using point-slope → slope-intercept
+
+1.08 — Word Problems with Lines
+
+Parallel/perpendicular in context
+
+application questions
+
+SWYK #3 Boss Fight
+
+1.09 — Substitution
+
+Solve systems
+
+plug in
+
+find (x, y)
+
+1.10 — Elimination & Intro to Matrices
+
+eliminate x or y
+
+solve
+
+simple matrix representations
+
+matrix addition & multiplication basics MCQ
+
+SWYK #4 Boss Fight
+
+REVIEW PACK
+
+mix of entire unit
+
+multi-step challenges
+
+timed mode toggle
+
+FINAL BOSS: UNIT TEST
+
+20 questions
+
+Mixed difficulty
+
+Timer
+
+No hints
+
+Risk/reward streak bonuses
+
+Big final celebration at end
+
+💾 STORAGE REQUIREMENTS
+
+Use localStorage to save:
+
+XP
+
+streak
+
+highest streak
+
+completed levels
+
+unlocked badges
+
+chosen theme
+
+last visited lesson
+
+energy & regeneration timer
+
+📂 FILE STRUCTURE
+
+Create:
+
+index.html
+style.css
+script.js
+assets/
+    particles.js (optional)
+    icons/
+    backgrounds/
+    sfx/
+
+🔊 OPTIONAL SOUND DESIGN
+
+Use simple click, correct, wrong, and level complete sound effects.
+Must be toggleable via settings.
+
+📜 FINAL OUTPUT REQUIREMENTS
+
+Include ALL level content and questions directly in script.js
+
+Fully playable
+
+Polished transitions
+
+Works in Replit preview
+
+No placeholders
+
+Functional from first load
+
+Looks like a real educational game
