@@ -38,7 +38,7 @@ export function TitleScreen() {
             </h1>
             
             <p className="text-muted-foreground text-center max-w-md mt-2">
-              Master MPM2D Unit 1 - Linear Relations through an epic adventure
+              Master Grade 10 math with Math Legends
             </p>
           </div>
         </div>
