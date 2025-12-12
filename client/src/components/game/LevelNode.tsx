@@ -71,7 +71,7 @@ export function LevelNode({ level, isUnlocked, isCompleted, isFirst, isLast }: L
       <div className={cn(
         "absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-center max-w-32",
         isCompleted ? "text-neon-gold" : 
-        isUnlocked ? "text-foreground" : 
+        isUnlocked ? "text-gray-400" : 
         "text-muted-foreground"
       )}>
         <span className="font-medium line-clamp-2">{level.title}</span>
