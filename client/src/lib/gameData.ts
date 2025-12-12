@@ -361,9 +361,7 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "Plumber $60 call + $35/hr. 2 hours:", options: ["$130", "$95", "$120", "$70"], correctAnswer: "$130", hint: "" },
     ],
   },
-];
 
-export const LEVELS_UNIT2 = [
 // 2.01 Similar Triangles
   {
     id: "2.01",
