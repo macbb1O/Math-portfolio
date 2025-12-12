@@ -29,7 +29,7 @@ export function TitleScreen() {
             
             <h1 className="text-5xl sm:text-7xl font-bold font-display text-center">
               <span className="bg-gradient-to-r from-neon-purple via-neon-pink to-neon-blue bg-clip-text text-transparent neon-text-purple">
-                Linear
+                Math
               </span>
               <br />
               <span className="bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-purple bg-clip-text text-transparent neon-text-blue">
