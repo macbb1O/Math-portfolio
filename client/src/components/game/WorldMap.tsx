@@ -11,9 +11,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 export function WorldMap() {
   const { setScreen, completedLevels, unlockedBadges } = useGameStore();
 
-  // Group levels by unit based on their ID prefix (e.g., "1." for Unit 1, "2." for Unit 2)
+  // Group levels by their unit prefix (1., 2., etc.) — keep SWYK in place
   const units = LEVELS.reduce<Record<string, typeof LEVELS>>((acc, level) => {
-    const unitKey = level.id.includes("swyk") ? "Boss Fights" : level.id.split(".")[0];
+    const unitKey = level.id.split(".")[0]; // just use the numeric prefix
     if (!acc[unitKey]) acc[unitKey] = [];
     acc[unitKey].push(level);
     return acc;
@@ -49,7 +49,7 @@ export function WorldMap() {
             <div key={unitName} className="mb-12">
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold mb-2">
-                  {unitName === "Boss Fights" ? "Boss Fights" : `Unit ${unitName}`}
+                  Unit {unitName}
                 </h2>
                 <p className="text-muted-foreground text-sm">
                   Complete all levels to master this unit
