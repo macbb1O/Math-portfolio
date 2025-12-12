@@ -69,7 +69,7 @@ export function LevelNode({ level, isUnlocked, isCompleted, isFirst, isLast }: L
       </Button>
       
       <div className={cn(
-        "absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-center max-w-32",
+        "absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-center max-w-32",
         isCompleted ? "text-neon-gold" : 
         isUnlocked ? "text-foreground" : 
         "text-muted-foreground"
