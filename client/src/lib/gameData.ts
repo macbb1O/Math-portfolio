@@ -363,6 +363,260 @@ export const LEVELS: Level[] = [
   },
 ];
 
+export const LEVELS_UNIT2 = [
+// 2.01 Similar Triangles
+  {
+    id: "2.01",
+    number: "2.01",
+    title: "Similar Triangles",
+    description: "Learn how to identify and work with similar triangles",
+    type: "lesson",
+    xpReward: 80,
+    badge: "similar-savant",
+    questions: [
+      { id: generateId(), type: "input", question: "Triangle ABC is similar to triangle DEF. If AB = 6, BC = 8, DE = 9, find EF.", correctAnswer: "12", hint: "Use ratio of similarity" },
+      { id: generateId(), type: "mcq", question: "Two triangles are similar. If the smaller triangle has a side of 5 and the scale factor is 2, what is the corresponding side in the larger triangle?", options: ["7", "10", "5", "12"], correctAnswer: "10", hint: "Multiply side by scale factor" },
+      { id: generateId(), type: "input", question: "In similar triangles, the perimeter of the smaller triangle is 12 and the ratio of similarity is 1:3. Find the perimeter of the larger triangle.", correctAnswer: "36", hint: "Perimeter scales like sides" },
+      { id: generateId(), type: "input", question: "Triangle XYZ is similar to triangle PQR. If XY = 5 and XZ = 7, and the ratio of similarity is 2:3, find the corresponding sides in PQR.", correctAnswer: "XY = 7.5, XZ = 10.5", hint: "Multiply each side by 3/2" },
+      { id: generateId(), type: "mcq", question: "If two triangles are similar and one angle is 45°, the corresponding angle in the other triangle is:", options: ["45°", "90°", "30°", "Cannot determine"], correctAnswer: "45°", hint: "Corresponding angles are equal" },
+      { id: generateId(), type: "input", question: "Given two similar triangles, the base of the larger triangle is 18 and the smaller triangle's base is 12. Find the ratio of similarity.", correctAnswer: "1:1.5", hint: "Ratio = smaller:larger" },
+      { id: generateId(), type: "input", question: "Triangle LMN is similar to triangle STU. If LM = 10 and ST = 15, find the scale factor.", correctAnswer: "1.5", hint: "Scale factor = larger/smaller" },
+      { id: generateId(), type: "mcq", question: "Two similar triangles have areas 25 and 100. What is the ratio of their sides?", options: ["1:4", "1:2", "1:3", "2:1"], correctAnswer: "1:2", hint: "Side ratio = sqrt(area ratio)" },
+      { id: generateId(), type: "input", question: "A triangle has sides 3, 4, 5. Find the sides of a similar triangle with a scale factor of 3.", correctAnswer: "9, 12, 15", hint: "Multiply each side by 3" },
+      { id: generateId(), type: "mcq", question: "If the corresponding sides of two similar triangles are in ratio 2:5, the corresponding perimeters are in ratio:", options: ["2:5", "4:25", "1:2", "5:2"], correctAnswer: "2:5", hint: "Perimeter scales same as sides" }
+    ],
+  },
+  
+  // 2.02 Primary Trigonometric Ratios (SOH CAH TOA)
+  {
+    id: "2.02",
+    number: "2.02",
+    title: "Primary Trigonometric Ratios (SOH CAH TOA)",
+    description: "Learn sine, cosine, and tangent ratios",
+    type: "lesson",
+    xpReward: 80,
+    badge: "trig-tyro",
+    questions: [
+      { id: generateId(), type: "input", question: "Find sin(30°).", correctAnswer: "0.5", hint: "SOH: sin = opposite/hypotenuse" },
+      { id: generateId(), type: "input", question: "Find cos(60°).", correctAnswer: "0.5", hint: "CAH: cos = adjacent/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "tan(45°) equals:", options: ["1", "0", "√2", "√3"], correctAnswer: "1", hint: "TOA: tan = opposite/adjacent" },
+      { id: generateId(), type: "input", question: "In a right triangle, opposite = 3, adjacent = 4. Find tan θ.", correctAnswer: "0.75", hint: "tan = opposite/adjacent" },
+      { id: generateId(), type: "mcq", question: "cos θ = 0.6, opposite = 3. Find hypotenuse.", options: ["4", "5", "3", "6"], correctAnswer: "5", hint: "cos = adjacent/hypotenuse" },
+      { id: generateId(), type: "input", question: "sin θ = 0.8, hypotenuse = 5. Find opposite.", correctAnswer: "4", hint: "sin = opposite/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "A right triangle has sides 5, 12, 13. Find sin θ where opposite = 5, hypotenuse = 13.", options: ["5/13", "12/13", "5/12", "12/5"], correctAnswer: "5/13", hint: "Use sin = opposite/hypotenuse" },
+      { id: generateId(), type: "input", question: "Find cos θ if adjacent = 8 and hypotenuse = 10.", correctAnswer: "0.8", hint: "cos = adjacent/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "tan θ = 3/4. Find θ approximately.", options: ["36.87°", "45°", "53.13°", "30°"], correctAnswer: "36.87°", hint: "Use inverse tan" },
+      { id: generateId(), type: "input", question: "Right triangle with opposite = 7, hypotenuse = 25. Find sin θ.", correctAnswer: "0.28", hint: "sin = opposite/hypotenuse" }
+    ],
+  },
+  
+  // 2.03 Primary Trigonometric Ratios Practice
+  {
+    id: "2.03",
+    number: "2.03",
+    title: "Primary Trigonometric Ratios Practice",
+    description: "Practice solving for angles and sides using SOH CAH TOA",
+    type: "lesson",
+    xpReward: 80,
+    badge: "trig-trainee",
+    questions: [
+      { id: generateId(), type: "input", question: "Right triangle with opposite = 4, hypotenuse = 5. Find sin θ.", correctAnswer: "0.8", hint: "sin = opposite/hypotenuse" },
+      { id: generateId(), type: "input", question: "Right triangle with adjacent = 6, hypotenuse = 10. Find cos θ.", correctAnswer: "0.6", hint: "cos = adjacent/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "tan θ = opposite/adjacent = 3/4. Find θ.", options: ["36.87°", "53.13°", "45°", "30°"], correctAnswer: "36.87°", hint: "Use inverse tan" },
+      { id: generateId(), type: "input", question: "sin θ = 0.6, hypotenuse = 10. Find opposite.", correctAnswer: "6", hint: "opposite = sin * hypotenuse" },
+      { id: generateId(), type: "mcq", question: "cos θ = 0.8, hypotenuse = 10. Find adjacent.", options: ["6", "8", "10", "12"], correctAnswer: "8", hint: "adjacent = cos * hypotenuse" },
+      { id: generateId(), type: "input", question: "Opposite = 7, adjacent = 24. Find tan θ.", correctAnswer: "0.2917", hint: "tan = opposite/adjacent" },
+      { id: generateId(), type: "mcq", question: "Find sin θ if θ = 30°.", options: ["0.5", "0.6", "0.707", "1"], correctAnswer: "0.5", hint: "sin 30° = 1/2" },
+      { id: generateId(), type: "input", question: "cos θ = 0.6, adjacent = 3. Find hypotenuse.", correctAnswer: "5", hint: "cos = adjacent/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "In a triangle with sides 9, 12, 15, find sin of angle opposite 9.", options: ["0.6", "0.8", "0.5", "0.75"], correctAnswer: "0.6", hint: "Use sin = opposite/hypotenuse" },
+      { id: generateId(), type: "input", question: "tan θ = 2/3. Find θ approximately.", correctAnswer: "33.69", hint: "Use inverse tan" }
+    ],
+  },
+    
+  // 2.04 Applications of SOH CAH TOA
+  {
+    id: "2.04",
+    number: "2.04",
+    title: "Applications of SOH CAH TOA",
+    description: "Use trigonometry to solve real-world problems",
+    type: "lesson",
+    xpReward: 80,
+    badge: "trig-applier",
+    questions: [
+      { id: generateId(), type: "input", question: "A ladder leans against a wall making a 60° angle with the ground. If the ladder is 10 m long, find the height it reaches.", correctAnswer: "8.66", hint: "Use sin θ = opposite/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "A tree casts a 15 m shadow. If the angle of elevation of the sun is 30°, the height of the tree is:", options: ["7.5", "8.66", "15", "10"], correctAnswer: "8.66", hint: "Use tan θ = opposite/adjacent" },
+      { id: generateId(), type: "input", question: "A ramp rises 3 m over a horizontal distance of 4 m. Find the angle of elevation.", correctAnswer: "36.87", hint: "tan θ = opposite/adjacent" },
+      { id: generateId(), type: "mcq", question: "A kite string makes an angle of 50° with the ground. If the string is 20 m long, the height of the kite is:", options: ["15.3", "16.2", "12.5", "10"], correctAnswer: "15.3", hint: "Use sin θ = opposite/hypotenuse" },
+      { id: generateId(), type: "input", question: "A building casts a shadow of 12 m. If the angle of elevation is 45°, find the height of the building.", correctAnswer: "12", hint: "tan 45° = 1, so height = shadow" },
+      { id: generateId(), type: "mcq", question: "An observer sees the top of a tower at 30° elevation. If he is 50 m away, find the tower's height.", options: ["28.87", "50", "25", "43.3"], correctAnswer: "28.87", hint: "tan θ = opposite/adjacent" },
+      { id: generateId(), type: "input", question: "A hill rises at 20° from a horizontal path. If you walk 100 m along the path, how high do you rise?", correctAnswer: "34.2", hint: "sin or tan depending on sides given" },
+      { id: generateId(), type: "mcq", question: "Find the angle of elevation if a building 20 m tall casts a shadow of 20 m.", options: ["30°", "45°", "60°", "90°"], correctAnswer: "45°", hint: "tan θ = height/shadow" },
+      { id: generateId(), type: "input", question: "A 5 m pole leans forming a 60° angle with the ground. Find the distance from the base to the tip of the pole on the ground.", correctAnswer: "2.5", hint: "Use cos θ = adjacent/hypotenuse" },
+      { id: generateId(), type: "mcq", question: "If a ramp is 10 m long and rises 6 m, the angle of elevation is:", options: ["30°", "36.87°", "45°", "53.13°"], correctAnswer: "36.87°", hint: "Use sin or tan" }
+    ],
+  },
+  
+  // 2.05 Sine Law & Snell’s Law
+  {
+    id: "2.05",
+    number: "2.05",
+    title: "Sine Law & Snell’s Law",
+    description: "Learn Sine Law and apply to physics problems",
+    type: "lesson",
+    xpReward: 80,
+    badge: "sine-scholar",
+    questions: [
+      { id: generateId(), type: "input", question: "In triangle ABC, A=30°, B=45°, side a=10. Find side b using sine law.", correctAnswer: "14.14", hint: "b/sin B = a/sin A" },
+      { id: generateId(), type: "mcq", question: "Triangle with sides a=8, b=10, angle A=60°. Find angle B.", options: ["45°", "60°", "75.5°", "30°"], correctAnswer: "75.5", hint: "sin B / b = sin A / a" },
+      { id: generateId(), type: "input", question: "In triangle, a=12, b=9, A=50°. Find angle B using sine law.", correctAnswer: "36.87", hint: "sin B / b = sin A / a" },
+      { id: generateId(), type: "mcq", question: "If sin θ1 / sin θ2 = n2 / n1 in Snell’s law, and n1=1, n2=1.5, θ1=30°, find θ2.", options: ["48.6°", "30°", "60°", "45°"], correctAnswer: "48.6", hint: "Use arcsin(sin θ1 * n1/n2)" },
+      { id: generateId(), type: "input", question: "Triangle ABC: A=40°, B=60°, a=14. Find b.", correctAnswer: "17.15", hint: "Use sine law" },
+      { id: generateId(), type: "mcq", question: "Triangle with sides 7, 9, and angle 50°. Find unknown side using sine law.", options: ["8.5", "7.5", "10", "9.5"], correctAnswer: "8.5", hint: "b = a*sinB/sinA" },
+      { id: generateId(), type: "input", question: "Angle of incidence 45°, n1=1, n2=1.33. Find angle of refraction.", correctAnswer: "32.1", hint: "sin θ2 = n1/n2 * sin θ1" },
+      { id: generateId(), type: "mcq", question: "Given A=30°, a=10, b=15. Find angle B.", options: ["48.6°", "30°", "60°", "45°"], correctAnswer: "48.6", hint: "Use sine law" },
+      { id: generateId(), type: "input", question: "Triangle ABC: A=35°, B=55°, a=12. Find b.", correctAnswer: "16.04", hint: "Use sine law" },
+      { id: generateId(), type: "mcq", question: "Snell’s law: n1*sin θ1 = n2*sin θ2. If θ1=60°, n1=1, n2=1.5, θ2≈?", options: ["41.8°", "45°", "60°", "30°"], correctAnswer: "41.8", hint: "sin θ2 = sin θ1 * n1/n2" }
+    ],
+  },
+  
+  // 2.06 Cosine Law
+  {
+    id: "2.06",
+    number: "2.06",
+    title: "Cosine Law",
+    description: "Learn to find sides and angles using Cosine Law",
+    type: "lesson",
+    xpReward: 80,
+    badge: "cosine-captain",
+    questions: [
+      { id: generateId(), type: "input", question: "Triangle with sides a=8, b=6, angle C=60°. Find side c.", correctAnswer: "7.94", hint: "c² = a² + b² - 2ab cos C" },
+      { id: generateId(), type: "mcq", question: "Triangle a=7, b=9, c=10. Find angle C.", options: ["51.3°", "60°", "45°", "30°"], correctAnswer: "51.3", hint: "cos C = (a² + b² - c²)/2ab" },
+      { id: generateId(), type: "input", question: "Triangle with sides 5, 7, 9. Find angle opposite side 9.", correctAnswer: "54.5", hint: "cos C = (a² + b² - c²)/2ab" },
+      { id: generateId(), type: "mcq", question: "Triangle with sides 8, 15, 17. Find angle opposite side 17.", options: ["61.9°", "45°", "60°", "53°"], correctAnswer: "61.9", hint: "Use cosine law" },
+      { id: generateId(), type: "input", question: "Triangle a=10, b=6, c=8. Find angle opposite c.", correctAnswer: "48.19", hint: "cos C = (a²+b²-c²)/2ab" },
+      { id: generateId(), type: "mcq", question: "Triangle sides 13, 14, 15. Find angle opposite 15.", options: ["50.5°", "60°", "45°", "30°"], correctAnswer: "50.5", hint: "Use cosine law" },
+      { id: generateId(), type: "input", question: "Triangle a=9, b=12, c=15. Find angle opposite 15.", correctAnswer: "53.13", hint: "cos C = (a² + b² - c²)/2ab" },
+      { id: generateId(), type: "mcq", question: "Triangle a=6, b=8, c=10. Find angle opposite side 10.", options: ["53.13°", "45°", "60°", "30°"], correctAnswer: "53.13", hint: "Use cosine law" },
+      { id: generateId(), type: "input", question: "Triangle with sides 7, 24, 25. Find angle opposite 25.", correctAnswer: "81.79", hint: "cos C = (a² + b² - c²)/2ab" },
+      { id: generateId(), type: "mcq", question: "Triangle sides 3, 4, 5. Find angle opposite 5.", options: ["53.13°", "45°", "60°", "30°"], correctAnswer: "53.13", hint: "Use cosine law" }
+    ],
+  },
+    // 2.07 Applications of Sine and Cosine Law
+  {
+    id: "2.07",
+    number: "2.07",
+    title: "Applications of Sine and Cosine Law",
+    description: "Solve real-world problems using sine and cosine laws",
+    type: "lesson",
+    xpReward: 80,
+    badge: "law-master",
+    questions: [
+      { id: generateId(), type: "input", question: "Triangle ABC: a=8, b=6, C=60°. Find side c.", correctAnswer: "7.94", hint: "Use cosine law" },
+      { id: generateId(), type: "mcq", question: "Triangle with a=10, b=12, angle C=45°. Find c.", options: ["9.8", "12.4", "14.1", "10.5"], correctAnswer: "12.4", hint: "c² = a² + b² - 2ab cos C" },
+      { id: generateId(), type: "input", question: "Triangle: a=7, B=50°, b=9. Find angle A using sine law.", correctAnswer: "38.68", hint: "sin A / a = sin B / b" },
+      { id: generateId(), type: "mcq", question: "Triangle a=15, b=20, angle C=60°. Find side c.", options: ["16.6", "21.6", "18.3", "19.2"], correctAnswer: "16.6", hint: "Use cosine law" },
+      { id: generateId(), type: "input", question: "Triangle: a=5, b=7, c=9. Find angle opposite c.", correctAnswer: "73.4", hint: "cos C = (a²+b²-c²)/2ab" },
+      { id: generateId(), type: "mcq", question: "Triangle: a=9, b=12, A=45°. Find angle B.", options: ["60", "54.5", "50", "52"], correctAnswer: "52", hint: "Use sine law" },
+      { id: generateId(), type: "input", question: "Triangle ABC: a=11, b=13, angle C=40°. Find side c.", correctAnswer: "10.6", hint: "Use cosine law" },
+      { id: generateId(), type: "mcq", question: "Triangle sides a=6, b=8, c=10. Find angle opposite side c.", options: ["53.13°", "45°", "60°", "30°"], correctAnswer: "53.13", hint: "Use cosine law" },
+      { id: generateId(), type: "input", question: "Triangle: a=7, b=10, C=80°. Find side c.", correctAnswer: "12.2", hint: "Use cosine law" },
+      { id: generateId(), type: "mcq", question: "Triangle: a=8, b=6, angle C=50°. Find side c.", options: ["6.5", "7.3", "8.1", "7.0"], correctAnswer: "7.3", hint: "Use cosine law" }
+    ],
+  },
+  
+  // 2.08 Length of a Line Segment (Pythagorean Theorem)
+  {
+    id: "2.08",
+    number: "2.08",
+    title: "Length of a Line Segment",
+    description: "Use the Pythagorean theorem to find distances",
+    type: "lesson",
+    xpReward: 80,
+    badge: "pythagoras-pro",
+    questions: [
+      { id: generateId(), type: "input", question: "Find the hypotenuse of a right triangle with legs 3 and 4.", correctAnswer: "5", hint: "c² = a² + b²" },
+      { id: generateId(), type: "mcq", question: "Triangle with legs 6 and 8. Find hypotenuse.", options: ["8", "10", "12", "14"], correctAnswer: "10", hint: "Use a²+b²=c²" },
+      { id: generateId(), type: "input", question: "Find the missing leg if hypotenuse=13, other leg=5.", correctAnswer: "12", hint: "b² = c² - a²" },
+      { id: generateId(), type: "mcq", question: "Right triangle: hypotenuse=17, one leg=8. Find other leg.", options: ["15", "12", "9", "16"], correctAnswer: "15", hint: "b² = c² - a²" },
+      { id: generateId(), type: "input", question: "Triangle legs 7 and 24. Find hypotenuse.", correctAnswer: "25", hint: "Use Pythagoras" },
+      { id: generateId(), type: "mcq", question: "Legs 9 and 12. Hypotenuse is:", options: ["15", "16", "14", "13"], correctAnswer: "15", hint: "c² = a² + b²" },
+      { id: generateId(), type: "input", question: "Hypotenuse=10, leg=6. Find other leg.", correctAnswer: "8", hint: "b² = c² - a²" },
+      { id: generateId(), type: "mcq", question: "Triangle legs 5 and 12. Find hypotenuse.", options: ["13", "12", "15", "14"], correctAnswer: "13", hint: "c² = a² + b²" },
+      { id: generateId(), type: "input", question: "Legs 8 and 15. Find hypotenuse.", correctAnswer: "17", hint: "Pythagoras" },
+      { id: generateId(), type: "mcq", question: "Hypotenuse 26, one leg 10. Other leg?", options: ["24", "20", "22", "18"], correctAnswer: "24", hint: "b² = c² - a²" }
+    ],
+  },
+  
+  // 2.09 Midpoint (Average between numbers)
+  {
+    id: "2.09",
+    number: "2.09",
+    title: "Midpoint",
+    description: "Find the midpoint of a line segment",
+    type: "lesson",
+    xpReward: 80,
+    badge: "midpoint-master",
+    questions: [
+      { id: generateId(), type: "input", question: "Find midpoint between (2,3) and (4,7).", correctAnswer: "(3,5)", hint: "Midpoint = ((x1+x2)/2, (y1+y2)/2)" },
+      { id: generateId(), type: "mcq", question: "Midpoint of (0,0) and (6,8)?", options: ["(3,4)", "(6,4)", "(3,8)", "(0,4)"], correctAnswer: "(3,4)", hint: "Average x and y" },
+      { id: generateId(), type: "input", question: "Midpoint of (-2,5) and (4,9)?", correctAnswer: "(1,7)", hint: "Use (x1+x2)/2, (y1+y2)/2" },
+      { id: generateId(), type: "mcq", question: "Midpoint between (1,1) and (5,7)?", options: ["(3,4)", "(2,4)", "(3,5)", "(4,5)"], correctAnswer: "(3,4)", hint: "Average x and y" },
+      { id: generateId(), type: "input", question: "Midpoint of (-3,-5) and (3,5)?", correctAnswer: "(0,0)", hint: "Average of coordinates" },
+      { id: generateId(), type: "mcq", question: "Midpoint of (10,2) and (4,8)?", options: ["(7,5)", "(6,5)", "(8,5)", "(7,6)"], correctAnswer: "(7,5)", hint: "Use formula" },
+      { id: generateId(), type: "input", question: "Midpoint of (7,-3) and (-1,5)?", correctAnswer: "(3,1)", hint: "Average x and y" },
+      { id: generateId(), type: "mcq", question: "Midpoint between (2,0) and (6,4)?", options: ["(4,2)", "(3,2)", "(4,3)", "(3,3)"], correctAnswer: "(4,2)", hint: "Midpoint formula" },
+      { id: generateId(), type: "input", question: "Midpoint of (-6,-2) and (0,4)?", correctAnswer: "(-3,1)", hint: "Average coordinates" },
+      { id: generateId(), type: "mcq", question: "Midpoint of (1,9) and (5,1)?", options: ["(3,5)", "(2,4)", "(3,4)", "(4,5)"], correctAnswer: "(3,5)", hint: "Use formula" }
+    ],
+  },
+  
+  // 2.10 Verifying Properties of Shapes
+  {
+    id: "2.10",
+    number: "2.10",
+    title: "Verifying Properties of Shapes",
+    description: "Check angles, sides, and diagonals of shapes",
+    type: "lesson",
+    xpReward: 80,
+    badge: "shape-checker",
+    questions: [
+      { id: generateId(), type: "mcq", question: "Square: all sides equal? True or False", options: ["True", "False"], correctAnswer: "True", hint: "Check definition of square" },
+      { id: generateId(), type: "input", question: "Rectangle sides: 8 and 5. Diagonal length?", correctAnswer: "9.43", hint: "Use Pythagoras" },
+      { id: generateId(), type: "mcq", question: "Parallelogram: opposite angles equal? True or False", options: ["True", "False"], correctAnswer: "True", hint: "Definition of parallelogram" },
+      { id: generateId(), type: "input", question: "Rhombus side = 6, angle=60°. Find diagonal.", correctAnswer: "10.39", hint: "Use trigonometry" },
+      { id: generateId(), type: "mcq", question: "Square diagonal formula?", options: ["s√2", "2s", "s/2", "s²"], correctAnswer: "s√2", hint: "Use Pythagoras" },
+      { id: generateId(), type: "input", question: "Rectangle: length=10, width=6. Diagonal?", correctAnswer: "11.66", hint: "Use Pythagoras" },
+      { id: generateId(), type: "mcq", question: "Right triangle: angle sum?", options: ["180°", "90°", "270°", "360°"], correctAnswer: "180°", hint: "Sum of angles in triangle" },
+      { id: generateId(), type: "input", question: "Trapezoid: bases=8, 12, height=5. Area?", correctAnswer: "50", hint: "Area = (b1+b2)/2 * h" },
+      { id: generateId(), type: "mcq", question: "Diagonal of rectangle splits it into?", options: ["2 right triangles", "2 squares", "2 parallelograms", "2 rhombuses"], correctAnswer: "2 right triangles", hint: "Each triangle is right" },
+      { id: generateId(), type: "input", question: "Equilateral triangle side=6. Height?", correctAnswer: "5.2", hint: "h = √(s²-(s/2)²)" }
+    ],
+  },
+  
+  // 2.11 Equations of Circles
+  {
+    id: "2.11",
+    number: "2.11",
+    title: "Equations of Circles",
+    description: "Write and solve equations for circles",
+    type: "lesson",
+    xpReward: 80,
+    badge: "circle-solver",
+    questions: [
+      { id: generateId(), type: "input", question: "Circle center (0,0), radius=5. Equation?", correctAnswer: "x² + y² = 25", hint: "(x-h)² + (y-k)² = r²" },
+      { id: generateId(), type: "mcq", question: "Circle center (2,3), radius=4. Equation?", options: ["(x-2)²+(y-3)²=16", "(x+2)²+(y+3)²=16", "(x-2)²+(y-3)²=8", "(x+2)²+(y-3)²=16"], correctAnswer: "(x-2)²+(y-3)²=16", hint: "Use (x-h)²+(y-k)²=r²" },
+      { id: generateId(), type: "input", question: "Circle center (-1,2), radius=3. Equation?", correctAnswer: "(x+1)²+(y-2)²=9", hint: "Plug h=-1,k=2,r=3" },
+      { id: generateId(), type: "mcq", question: "Circle center (0,-2), radius=5. Equation?", options: ["x²+(y+2)²=25", "x²+(y-2)²=25", "x²+(y+2)²=5", "x²+(y-2)²=5"], correctAnswer: "x²+(y+2)²=25", hint: "Use formula" },
+      { id: generateId(), type: "input", question: "Circle: center (3,-1), radius=7. Equation?", correctAnswer: "(x-3)²+(y+1)²=49", hint: "r² = 49" },
+      { id: generateId(), type: "mcq", question: "Equation x²+y²=16: center?", options: ["(0,0)", "(4,4)", "(2,2)", "(-4,-4)"], correctAnswer: "(0,0)", hint: "Compare with (x-h)²+(y-k)²=r²" },
+      { id: generateId(), type: "input", question: "Circle: center (1,1), radius=2. Equation?", correctAnswer: "(x-1)²+(y-1)²=4", hint: "Plug in h,k,r" },
+      { id: generateId(), type: "mcq", question: "Circle: (x+2)²+(y-3)²=9. Radius?", options: ["3", "9", "5", "6"], correctAnswer: "3", hint: "r²=9 → r=3" },
+      { id: generateId(), type: "input", question: "Circle: center (-2,-2), radius=6. Equation?", correctAnswer: "(x+2)²+(y+2)²=36", hint: "r²=36" }
+    ],
+  },
+];
+
+
 export function getLevelById(id: string): Level | undefined {
   return LEVELS.find(l => l.id === id);
 }
