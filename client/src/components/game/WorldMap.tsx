@@ -11,15 +11,24 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 export function WorldMap() {
   const { setScreen, completedLevels, unlockedBadges } = useGameStore();
 
+  // --- Split levels by unit ---
+  const unit1Levels = LEVELS.filter(l => l.id.startsWith("1."));
+  const unit2Levels = LEVELS.filter(l => l.id.startsWith("2."));
+
+  // --- Unit 1 must be fully completed to unlock Unit 2 ---
+  const unit1Completed = unit1Levels.every(level =>
+    completedLevels.includes(level.id)
+  );
+
   return (
     <div className="min-h-screen flex flex-col relative z-10">
+      {/* ===== HEADER ===== */}
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur-lg border-b border-border p-4">
         <div className="flex items-center justify-between gap-4 max-w-4xl mx-auto flex-wrap">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setScreen("title")}
-            data-testid="button-back-to-title"
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
@@ -35,54 +44,99 @@ export function WorldMap() {
         </div>
       </header>
 
+      {/* ===== MAP ===== */}
       <ScrollArea className="flex-1 px-4 py-8">
         <div className="max-w-md mx-auto">
+          {/* ===== TITLE ===== */}
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold mb-2">World Map</h2>
             <p className="text-muted-foreground text-sm">
-              Complete levels to unlock new lessons and units
+              Complete lessons to unlock new units
             </p>
+
             <div className="flex items-center justify-center gap-4 mt-4 text-sm">
               <span className="flex items-center gap-1">
                 <Trophy className="w-4 h-4 text-neon-gold" />
-                <span data-testid="text-badges-unlocked">{unlockedBadges.length}/10</span>
+                {unlockedBadges.length}/10
               </span>
               <span className="text-muted-foreground">
-                <span data-testid="text-levels-completed">{completedLevels.length}</span>/{LEVELS.length} Levels
+                {completedLevels.length}/{LEVELS.length} Levels
               </span>
             </div>
           </div>
 
+          {/* ===== MAP LINE ===== */}
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-neon-purple/50 via-neon-blue/50 to-neon-pink/50 -translate-x-1/2" />
 
-            <div className="relative flex flex-col gap-4">
-              {LEVELS.map((level, index) => {
+            <div className="relative flex flex-col gap-6">
+
+              {/* ===== UNIT 1 ===== */}
+              <h3 className="text-lg font-bold text-center mt-4 mb-2">
+                Unit 1 — Linear Relations
+              </h3>
+
+              {unit1Levels.map((level, index) => {
                 const isUnlocked = isLevelUnlocked(level.id, completedLevels);
                 const isCompleted = completedLevels.includes(level.id);
-                const isFirst = index === 0;
-                const isLast = index === LEVELS.length - 1;
 
                 return (
                   <div
                     key={level.id}
-                    className={`flex items-center gap-4 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
-                    style={{ animationDelay: `${index * 0.05}s` }}
+                    className={`flex items-center gap-4 ${
+                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                    }`}
                   >
                     <div className="flex-1" />
-
                     <LevelNode
                       level={level}
                       isUnlocked={isUnlocked}
                       isCompleted={isCompleted}
-                      isFirst={isFirst}
-                      isLast={isLast}
+                      isFirst={index === 0}
+                      isLast={false}
                     />
-
                     <div className="flex-1" />
                   </div>
                 );
               })}
+
+              {/* ===== UNIT 2 ===== */}
+              <h3 className="text-lg font-bold text-center mt-12 mb-2">
+                Unit 2 — Trigonometry & Geometry
+              </h3>
+
+              {!unit1Completed && (
+                <p className="text-center text-sm text-muted-foreground mb-4">
+                  Complete Unit 1 to unlock this unit
+                </p>
+              )}
+
+              {unit2Levels.map((level, index) => {
+                const isUnlocked =
+                  unit1Completed &&
+                  isLevelUnlocked(level.id, completedLevels);
+                const isCompleted = completedLevels.includes(level.id);
+
+                return (
+                  <div
+                    key={level.id}
+                    className={`flex items-center gap-4 ${
+                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                    }`}
+                  >
+                    <div className="flex-1" />
+                    <LevelNode
+                      level={level}
+                      isUnlocked={isUnlocked}
+                      isCompleted={isCompleted}
+                      isFirst={false}
+                      isLast={index === unit2Levels.length - 1}
+                    />
+                    <div className="flex-1" />
+                  </div>
+                );
+              })}
+
             </div>
           </div>
         </div>
