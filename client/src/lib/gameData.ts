@@ -233,26 +233,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "[1 2] + [3 1] = ?", options: ["[4 3]", "[4 2]", "[3 3]", "[2 3]"], correctAnswer: "[4 3]", hint: "1+3 and 2+1" },
     ],
   },
-  {
-    id: "review",
-    number: "Review",
-    title: "Unit Review",
-    description: "Practice all concepts from the unit",
-    type: "review",
-    xpReward: 100,
-    questions: [
-      { id: generateId(), type: "mcq", question: "Expand: 4(2x - 3)", options: ["8x - 12", "8x - 3", "6x - 7", "8x + 12"], correctAnswer: "8x - 12", hint: "Multiply each term by 4" },
-      { id: generateId(), type: "input", question: "Solve: 5x - 3 = 2x + 9", correctAnswer: "4", hint: "Get x terms together" },
-      { id: generateId(), type: "mcq", question: "Slope of y = -4x + 7", options: ["-4", "7", "4", "-7"], correctAnswer: "-4", hint: "Coefficient of x" },
-      { id: generateId(), type: "input", question: "x-intercept of 2x + y = 8", correctAnswer: "4", hint: "Set y = 0" },
-      { id: generateId(), type: "mcq", question: "Perpendicular slope to m = 1/2", options: ["-2", "2", "1/2", "-1/2"], correctAnswer: "-2", hint: "Flip and negate" },
-      { id: generateId(), type: "input", question: "Slope between (1, 3) and (5, 11)", correctAnswer: "2", hint: "Rise over run" },
-      { id: generateId(), type: "mcq", question: "y = 2x, x + y = 6. Find x:", options: ["2", "3", "4", "1"], correctAnswer: "2", hint: "Substitute" },
-      { id: generateId(), type: "input", question: "x + y = 9, x - y = 3. Find x:", correctAnswer: "6", hint: "Add equations" },
-      { id: generateId(), type: "mcq", question: "Parallel slope to m = 5", options: ["5", "-5", "1/5", "-1/5"], correctAnswer: "5", hint: "Same slope" },
-      { id: generateId(), type: "input", question: "Solve: x/3 + 2 = 6", correctAnswer: "12", hint: "Subtract 2, multiply by 3" },
-    ],
-  },
   
 // 2.01 Similar Triangles
   {
