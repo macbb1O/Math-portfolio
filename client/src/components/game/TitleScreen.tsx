@@ -88,12 +88,6 @@ export function TitleScreen() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-8 flex gap-6 animate-float">
-        <MathSymbol symbol="y = mx + b" delay={0} />
-        <MathSymbol symbol="f(x)" delay={0.2} />
-        <MathSymbol symbol="slope" delay={0.4} />
-      </div>
     </div>
   );
 }
