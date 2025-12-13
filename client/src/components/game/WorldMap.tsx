@@ -65,8 +65,6 @@ export function WorldMap() {
             </div>
           </div>
 
-            <div className="relative flex flex-col gap-6">
-
               {/* ===== UNIT 1 ===== */}
               <h3 className="text-lg font-bold text-center mt-4 mb-2">
                 Unit 1 — Linear Relations
