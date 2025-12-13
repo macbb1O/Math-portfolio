@@ -65,10 +65,6 @@ export function WorldMap() {
             </div>
           </div>
 
-          {/* ===== MAP LINE ===== */}
-          <div className="relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-neon-purple/50 via-neon-blue/50 to-neon-pink/50 -translate-x-1/2" />
-
             <div className="relative flex flex-col gap-6">
 
               {/* ===== UNIT 1 ===== */}
