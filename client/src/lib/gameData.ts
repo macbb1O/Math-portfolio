@@ -233,8 +233,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "[1 2] + [3 1] = ?", options: ["[4 3]", "[4 2]", "[3 3]", "[2 3]"], correctAnswer: "[4 3]", hint: "1+3 and 2+1" },
     ],
   },
-  
-// 2.01 Similar Triangles
   {
     id: "2.01",
     number: "2.01",
@@ -256,8 +254,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "If the corresponding sides of two similar triangles are in ratio 2:5, the corresponding perimeters are in ratio:", options: ["2:5", "4:25", "1:2", "5:2"], correctAnswer: "2:5", hint: "Perimeter scales same as sides" }
     ],
   },
-  
-  // 2.02 Primary Trigonometric Ratios (SOH CAH TOA)
   {
     id: "2.02",
     number: "2.02",
@@ -279,8 +275,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "input", question: "Right triangle with opposite = 7, hypotenuse = 25. Find sin θ.", correctAnswer: "0.28", hint: "sin = opposite/hypotenuse" }
     ],
   },
-  
-  // 2.03 Primary Trigonometric Ratios Practice
   {
     id: "2.03",
     number: "2.03",
@@ -302,8 +296,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "input", question: "tan θ = 2/3. Find θ approximately.", correctAnswer: "33.69", hint: "Use inverse tan" }
     ],
   },
-    
-  // 2.04 Applications of SOH CAH TOA
   {
     id: "2.04",
     number: "2.04",
@@ -325,8 +317,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "If a ramp is 10 m long and rises 6 m, the angle of elevation is:", options: ["30°", "36.87°", "45°", "53.13°"], correctAnswer: "36.87°", hint: "Use sin or tan" }
     ],
   },
-  
-  // 2.05 Sine Law & Snell’s Law
   {
     id: "2.05",
     number: "2.05",
@@ -348,8 +338,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "Snell’s law: n1*sin θ1 = n2*sin θ2. If θ1=60°, n1=1, n2=1.5, θ2≈?", options: ["41.8°", "45°", "60°", "30°"], correctAnswer: "41.8", hint: "sin θ2 = sin θ1 * n1/n2" }
     ],
   },
-  
-  // 2.06 Cosine Law
   {
     id: "2.06",
     number: "2.06",
@@ -371,7 +359,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "mcq", question: "Triangle sides 3, 4, 5. Find angle opposite 5.", options: ["53.13°", "45°", "60°", "30°"], correctAnswer: "53.13", hint: "Use cosine law" }
     ],
   },
-    // 2.07 Applications of Sine and Cosine Law
   {
     id: "2.07",
     number: "2.07",
@@ -394,7 +381,6 @@ export const LEVELS: Level[] = [
     ],
   },
   
-  // 2.08 Length of a Line Segment (Pythagorean Theorem)
   {
     id: "2.08",
     number: "2.08",
@@ -417,7 +403,6 @@ export const LEVELS: Level[] = [
     ],
   },
   
-  // 2.09 Midpoint (Average between numbers)
   {
     id: "2.09",
     number: "2.09",
@@ -438,9 +423,7 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "input", question: "Midpoint of (-6,-2) and (0,4)?", correctAnswer: "(-3,1)", hint: "Average coordinates" },
       { id: generateId(), type: "mcq", question: "Midpoint of (1,9) and (5,1)?", options: ["(3,5)", "(2,4)", "(3,4)", "(4,5)"], correctAnswer: "(3,5)", hint: "Use formula" }
     ],
-  },
-  
-  // 2.10 Verifying Properties of Shapes
+  }, 
   {
     id: "2.10",
     number: "2.10",
@@ -462,8 +445,6 @@ export const LEVELS: Level[] = [
       { id: generateId(), type: "input", question: "Equilateral triangle side=6. Height?", correctAnswer: "5.2", hint: "h = √(s²-(s/2)²)" }
     ],
   },
-  
-  // 2.11 Equations of Circles
   {
     id: "2.11",
     number: "2.11",
