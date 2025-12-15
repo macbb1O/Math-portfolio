@@ -10,46 +10,45 @@ export function TitleScreen() {
   const hasProgress = completedLevels.length > 0;
 
   return (
-    <div className="min-h-screen flex flex-col justify-center p-6 relative">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 relative bg-background">
       
       {/* Top HUD */}
-      <div className="absolute top-4 left-4 right-4 flex items-center justify-between gap-4">
+      <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
         <EnergyHearts />
         <StreakCounter />
       </div>
 
-      {/* Main Content */}
-      <div className="flex flex-col items-start gap-8 w-full max-w-xl">
+      {/* Main Card */}
+      <div className="flex flex-col items-center gap-8 w-full max-w-md text-center">
 
         {/* Title */}
         <div className="flex flex-col gap-2">
-          <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+          <span className="text-sm uppercase tracking-wider text-muted-foreground">
             Grade 10 Math
           </span>
 
-          <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
-            Math <br /> Legends
+          <h1 className="text-5xl sm:text-6xl font-bold">
+            Math Legends
           </h1>
 
-          <p className="text-muted-foreground max-w-md">
+          <p className="text-muted-foreground">
             Math Portfolio
           </p>
         </div>
 
-        {/* XP Bar */}
-        <div className="w-full max-w-sm">
+        {/* XP */}
+        <div className="w-full">
           <XPBar />
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col gap-3 w-full max-w-sm">
+        <div className="flex flex-col gap-3 w-full">
           <Button
             size="lg"
-            className="justify-start px-6 py-6 text-lg font-semibold rounded-xl"
+            className="py-6 text-lg font-semibold rounded-xl"
             onClick={() => setScreen("map")}
-            data-testid="button-start-adventure"
           >
-            <Play className="w-5 h-5 mr-3" />
+            <Play className="w-5 h-5 mr-2" />
             {hasProgress ? "Continue Adventure" : "Start Adventure"}
           </Button>
 
@@ -57,30 +56,29 @@ export function TitleScreen() {
             <Button
               variant="ghost"
               size="sm"
-              className="justify-start text-muted-foreground"
+              className="text-muted-foreground"
               onClick={() => {
                 if (confirm("Are you sure you want to reset all progress?")) {
                   resetProgress();
                 }
               }}
-              data-testid="button-reset-progress"
             >
-              <RotateCcw className="w-4 h-4 mr-3" />
+              <RotateCcw className="w-4 h-4 mr-2" />
               Reset Progress
             </Button>
           )}
         </div>
 
         {/* Stats */}
-        <div className="flex items-center gap-8 text-sm text-muted-foreground">
-          <div className="flex flex-col items-start">
+        <div className="flex items-center gap-10 text-sm text-muted-foreground">
+          <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground">
               {completedLevels.length}
             </span>
             <span>Levels Done</span>
           </div>
 
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground">
               13
             </span>
