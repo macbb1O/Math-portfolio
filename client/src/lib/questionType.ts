@@ -4,8 +4,10 @@ export type QuestionType =
   | "linear-equation"
   | "two-step-equation"
   | "graphing-lines"
-  | "pythagorean-theorem"
-  | "sohcahtoa"
-  | "sine-law"
-  | "cosine-law";
-
+  | "simplifying-distributive"
+  | "fractions-equations"
+  | "standard-form"
+  | "parallel-perpendicular"
+  | "substitution"
+  | "elimination"
+  | "similar-triangles";
