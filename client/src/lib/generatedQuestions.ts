@@ -1,5 +1,3 @@
-// generatedQuestion.ts
-
 export interface GeneratedQuestion {
   prompt: string;
   answers: string[];
